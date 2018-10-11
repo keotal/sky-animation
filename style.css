@@ -1,0 +1,146 @@
+ .stars {
+    background-color: #ffff99;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    left: 0%;
+    animation-iteration-count: infinite;
+  }
+  #star-1 {
+    margin-top: 10%;
+    margin-left: 30%;
+    animation-name: twinkle;
+    animation-duration: 800ms;
+  }
+  #star-2 {
+    margin-top: 20%;
+    margin-left: 50%;
+    animation-name: twinkle;
+    animation-duration: 700ms;
+  }
+  #star-3 {
+    margin-top: 15%;
+    margin-left: 80%;
+    animation-name: twinkle;
+    animation-duration: 750ms;
+  }
+  #star-4 {
+    margin-top: 2%;
+    margin-left: 60%;
+    animation-name: twinkle;
+    animation-duration: 900ms;
+  }
+  #star-5 {
+    margin-top: 5%;
+    margin-left: 10%;
+    animation-name: twinkle;
+    animation-duration: 900ms;
+  }
+  #star-6 {
+    width: 10px;
+    height: 10px;
+    margin-top: 7%;
+    margin-left: 30%;
+    animation-name: shooting;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-direction: reverse;
+  }
+
+  @keyframes twinkle {
+    50% {
+      transform: scale(0.5);
+      opacity: 0.1;
+    }
+  }
+  @keyframes shooting {
+    0% {
+      transform: translateX(900px) translateY(400px);
+      opacity: 0; 
+    }
+    80% {
+      transform: translateX(500px) translateY(300px);
+      opacity: 0; 
+    }
+  }
+
+  .cloud {
+    position: absolute;
+    left: 15%;
+    height: 100px;
+    width: 300px;
+    background-color: white;
+    border-radius: 50px;
+    opacity: 0.3;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  #cloud-1 {
+    margin-top: 30%;
+    margin-left: 40%;
+    animation-name: sway;
+    animation-duration: 34s;
+    opacity: 0.9;
+  }
+  #cloud-2 {
+    margin-top: 36%;
+    margin-left: 50%;
+    animation-name: sway;
+    animation-duration: 28s;
+    opacity: 0.6
+  }
+  #cloud-3 {
+    margin-top: 10%;
+    margin-left: 60%;
+    animation-name: sway;
+    animation-duration: 33s;
+    opacity: 0.7;
+  }
+  #cloud-4 {
+    margin-top: 11%;
+    margin-left: 21%;
+    animation-name: sway;
+    animation-duration: 28s;
+    opacity: 0.7;
+  }
+  #cloud-5 {
+    margin-top: 34%;
+    margin-left: -10%;
+    animation-name: sway;
+    animation-duration: 25s;
+  }
+  #cloud-6 {
+    margin-top: 40%;
+    margin-left: 45%;
+    animation-name: sway;
+    animation-duration: 20s;
+  }
+  #cloud-7 {
+    margin-top: 18%;
+    margin-left: -15%;
+    animation-name: sway;
+    animation-duration: 34s;
+    opacity: 0.8;
+  }
+  #cloud-8 {
+    margin-top: 15%;
+    margin-left: 25%;
+    animation-name: sway;
+    animation-duration: 30s;
+  }
+  @keyframes sway {
+    50% {
+      left: 10%;
+    }
+  }
+  #back {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black, blue, pink, cyan);
+  }
